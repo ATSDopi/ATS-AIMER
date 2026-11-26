@@ -35,7 +35,7 @@ ATS-AIMER **never** reads game memory, never injects, never sends synthetic inpu
 
 ## Roadmap
 
-- [ ] **M0 — Recorder**: Raw Input logger + screen capture → session files (video + input log)
+- [x] **M0 — Recorder**: Raw Input logger + screen capture → session files (video + input log)
 - [ ] **M1 — Duel slicer**: killfeed/HUD event detection + click bursts → clip cut
 - [ ] **M2 — Biomechanical engine**: enemy outline tracking + the 5 metrics
 - [ ] **M3 — Sensitivity lab**: multi-session blind protocol, green zone, coach cards, Tauri app
