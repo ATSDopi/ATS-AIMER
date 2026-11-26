@@ -1,0 +1,26 @@
+[project]
+name = "ats-aimer-analysis"
+version = "0.1.0"
+description = "Duel slicing + biomechanical aim metrics from ATS-AIMER session captures"
+requires-python = ">=3.11"
+dependencies = [
+    "opencv-python>=4.10",
+    "numpy>=2.1",
+    "scipy>=1.14",
+    "pyarrow>=17",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+vision = ["ultralytics>=8.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ats_aimer_analysis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

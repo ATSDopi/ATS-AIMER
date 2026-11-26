@@ -1,0 +1,43 @@
+# Contexte IA interne — ne pas publier (repo public)
+AGENTS.md
+CLAUDE.md
+
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Node / Tauri
+node_modules/
+app/dist/
+app/src-tauri/target/
+
+# Env & secrets
+.env
+.env.*
+
+# Données capturées — jamais commitées
+recordings/
+sessions/
+data/
+*.parquet
+*.mp4
+*.mkv
+*.jsonl
+
+# Modèles ML
+models/*.pt
+models/*.engine
+models/*.onnx
+
+# OS
+Thumbs.db
+.DS_Store
+nul
